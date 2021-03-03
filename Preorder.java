@@ -9,6 +9,10 @@ class TreeNode {
 }
 
 public class Preorder {
+    /**
+        Time Complexity: O(n)
+        Space Complexity: O(n)
+    */
     public List<Integer> recursivePreorder(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         recursivePreorder(root, result);
@@ -21,6 +25,10 @@ public class Preorder {
         recursivePreorder(root.right, result);
     }
 
+    /**
+        Time Complexity: O(n)
+        Space Complexity: O(n)
+    */
     public List<Integer> nonrecursivePreorder(TreeNode root) {
         Stack<TreeNode> stk = new Stack<>();
         List<Integer> result = new Arraylist<>();
@@ -34,6 +42,10 @@ public class Preorder {
         return result;
     }
 
+    /**
+        Time Complexity: O(n)
+        Space Complexity: O(1)
+    */
     public List<Integer> morrisPreorder(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         TreeNode p = root;
